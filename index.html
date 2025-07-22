@@ -9,40 +9,52 @@
       padding: 0;
       font-family: 'Segoe UI', sans-serif;
       direction: rtl;
-      color: #ffffff;
-      background-image: url('https://raw.githubusercontent.com/nofareyal/luxury-cars-website/main/luxury-banner.jpeg');
+      background-image: url('https://images.unsplash.com/photo-1606813905949-64965802a1a5?auto=format&fit=crop&w=1600&q=80');
       background-size: cover;
       background-position: center;
       background-attachment: fixed;
+      color: #ffffff;
       text-shadow: 1px 1px 3px #000;
     }
     .overlay {
       background-color: rgba(0, 0, 0, 0.6);
       padding: 40px;
-      max-width: 800px;
+      max-width: 1000px;
       margin: 80px auto;
       border-radius: 12px;
+      text-align: center;
     }
     h1 {
-      font-size: 32px;
+      font-size: 36px;
       color: #ffe400;
-    }
-    h2 {
-      font-size: 24px;
-      margin-top: 30px;
+      margin-bottom: 20px;
     }
     p {
-      margin-bottom: 12px;
+      font-size: 18px;
+      margin-bottom: 30px;
     }
-    a {
-      color: #ffe400;
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .buttons a {
+      background-color: #ffe400;
+      color: #000;
+      padding: 14px 24px;
+      border-radius: 8px;
+      text-decoration: none;
       font-weight: bold;
-      text-decoration: underline;
+      transition: 0.3s;
+    }
+    .buttons a:hover {
+      background-color: #ffffff;
+      color: #000;
     }
     footer {
-      text-align: center;
-      font-size: 12px;
       margin-top: 40px;
+      font-size: 12px;
       opacity: 0.8;
     }
   </style>
@@ -51,19 +63,13 @@
 
   <div class="overlay">
     <h1>פרויקט BI – רכבי יוקרה בישראל</h1>
-    <p>האתר מציג שלושה דשבורדים אינטראקטיביים שנבנו בתוכנת Tableau, לצורך ניתוח עסקאות מכירה והשכרה של רכבי יוקרה בישראל.</p>
+    <p>שלושה דשבורדים אינטראקטיביים לניתוח עסקאות מכירה והשכרה של רכבי יוקרה בישראל</p>
 
-    <h2>דשבורד אסטרטגי</h2>
-    <p>ניתוח מגמות מכירה לפי דגם ושנה.</p>
-    <a href="https://public.tableau.com/views/_17531885367760/sheet4?:language=en-US&publish=yes" target="_blank">צפייה בדשבורד האסטרטגי</a>
-
-    <h2>דשבורד ניהולי</h2>
-    <p>פילוח עסקאות לפי אזור גיאוגרפי וסוג לקוח.</p>
-    <a href="https://public.tableau.com/views/_17531891500220/sheet6?:language=en-US&publish=yes" target="_blank">צפייה בדשבורד הניהולי</a>
-
-    <h2>דשבורד תפעולי</h2>
-    <p>ניתוח תקופת השכרה לפי אמצעי תשלום ואחוזי הנחה.</p>
-    <a href="https://public.tableau.com/views/_17531902997960/sheet8?:language=en-US&publish=yes" target="_blank">צפייה בדשבורד התפעולי</a>
+    <div class="buttons">
+      <a href="https://public.tableau.com/views/_17531885367760/sheet4?:language=en-US&publish=yes" target="_blank">דשבורד אסטרטגי</a>
+      <a href="https://public.tableau.com/views/_17531891500220/sheet6?:language=en-US&publish=yes" target="_blank">דשבורד ניהולי</a>
+      <a href="https://public.tableau.com/views/_17531902997960/sheet8?:language=en-US&publish=yes" target="_blank">דשבורד תפעולי</a>
+    </div>
 
     <footer>© פרויקט גמר | נופר | יולי 2025</footer>
   </div>
